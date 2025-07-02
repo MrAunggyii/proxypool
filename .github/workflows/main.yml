@@ -1,0 +1,17 @@
+`yaml
+name: Deploy VPS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up VPS
+        run: |
+          echo "Welcome to your temporary VPS!"
+          uname -a
+          uptime
+          sleep 3600
+`
